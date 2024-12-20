@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+<!--Навигационная панель-->
+<nav>
+    <!--Логотип-->
+    <div class="logo">
+        <img src="https://logodix.com/logo/29239.png" alt="">
+    </div>
+    <ul>
+        <li><a href="index.html" class="active">Main</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="feedback.html">Contacts</a></li>
+        <li><a href="plans.html">Future plans</a></li>
+        <li><a href="todo.html">TO DO</a></li>
+        <li><a href="person.html">Persons</a></li>
+        <li><a href="responce.html">Response</a></li>
+        <button id="scrollToTop" style="display: none;">⬆️</button>
+    </ul>
+</nav>
+<!--Конец навигационной панели-->
+
+
+<div id="feedback" class="feedback-form">
+    <h2>Оставить отзыв</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Укажите имя" required> -->
+
+        <!-- <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="введите номер телефона" autocomplete="+996" required> -->
+
+        <label for="subject">Оцените нас:</label>
+        <select name="subject" id="subject">
+            <option value="web-development">Ужасно 1*</option>
+            <option value="mobile-development">Плохо 2*</option>
+            <option value="other">Средне 3*</option>
+            <option value="other">Хорошо 4*</option>
+            <option value="other">Отлично 5*</option>
+        </select>
+
+        <label for="message">Описание:</label>
+        <textarea name="message" id="message" rows="4" placeholder="Расскажите о вашем отзыве"></textarea>
+        <label><input type="checkbox" name="privacy_policy" required>я согласен</label>
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+</div>
+
+
+<!--Футер сайта-->
+<footer>
+    <p>Телефон: <a href="#">0550644770</a></p>
+    <p>Почта: <a href="#">kica@gmail.com</a></p>
+    <p>Адрес: Турусбекова 109/3</p>
+</footer>
+</body>
+</html>
