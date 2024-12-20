@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Sasha",
+      "age": 17,
+      "email": "kim.sasha@example.com",
+      "photo": "persons/pic1.jpg"
+    },
+    {
+      "name": "Asema",
+      "age": 16,
+      "email": "kim.asemka.yui@example.com",
+      "photo": "persons/pic2.jpg"
+    },
+    {
+      "name": "Adel",
+      "age": 20,
+      "email": "yugay.ad@example.com",
+      "photo": "persons/pic3.jpg"
+    }
+  ]

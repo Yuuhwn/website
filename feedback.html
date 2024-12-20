@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://logodix.com/logo/29239.png" alt="">
+        </div>
+        <ul>
+            
+            <li><a href="index.html" class="active">Main</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="feedback.html">Contacts</a></li>
+            <li><a href="plans.html">Future plans</a></li>
+            <li><a href="todo.html">TO DO</a></li>
+            <li><a href="person.html">Persons</a></li>
+            <li><a href="response.html">Response</a></li>
+            <button id="scrollToTop" style="display: none;">⬆️</button>
+        </ul>
+    </nav>
+
+    <div id="feedback" class="feedback-form">
+        <h2>Contacts</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name"required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your number">
+
+            <label for="subject">Theme of addressing:</label>
+            <select name="subject" id="subject">
+            <option value="aaa">Order</option>
+            <option value="bbb">Complaint</option>
+            <option value="ccc">Other</option>
+        </select>
+
+        <label for="message">Description:</label>
+        <textarea name="message" id="message" rows="4" placeholder="Tell about your addressing"></textarea>    
+        
+        <label>How do you want to contact:</label>
+        <label>
+            <input type="radio" name="phone_method" value="call">
+            By call
+        </label>
+        <label>
+            <input type="radio" name="email_method" value="email">
+            By email
+        </label>
+
+        <label><input type="checkbox" name="privacy_policy" required>I agree</label>
+
+        <button type="submit" class="btn">Send</button>
+
+    </form>
+    </div>
+
+    <!--Футер сайта-->
+    <footer>
+        <p>Telephone: <a href="#">0550644770</a></p>
+        <p>Website: <a href="#">dodopizza.kg</a></p>
+        <p>Email: <a href="#">dodopizza@gmail.com</a></p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

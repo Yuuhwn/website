@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="https://logodix.com/logo/29239.png" alt="">
+    </div>
+    <ul>
+        
+        <li><a href="index.html" class="active">Main</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="feedback.html">Contacts</a></li>
+        <li><a href="plans.html">Future plans</a></li>
+        <li><a href="todo.html">TO DO</a></li>
+        <li><a href="person.html">Persons</a></li>
+        <li><a href="response.html">Response</a></li>
+        <button id="scrollToTop" style="display: none;">⬆️</button>
+        <button id="openFeedBack" type="button">Оставить отзыв</button>
+        
+    </ul>
+</nav>
+
+<div class="content">
+    <img src="https://cdn.culture.ru/images/5830b792-a387-53b7-af1f-dd41944a2268" alt="">
+    <div class="pizza">
+        <h2>Pizza</h2>
+        <ul>
+            <li class="active">Peperoni</li>
+            <li class="active">Mexico</li>
+            <li class="active">Cheese</li>
+        </ul>
+    </div>
+    
+</div>
+
+<div class="sticker-container">
+
+<div class="images">
+    <img src="https://imgproxy.sbermarket.ru/imgproxy/width-auto/czM6Ly9jb250ZW50LWltYWdlcy1wcm9kL3Byb2R1Y3RzLzI3NDg2NDQyL29yaWdpbmFsLzEvMjAyMy0xMC0xOVQxMyUzQTA5JTNBMDguNjIzMDY0JTJCMDAlM0EwMC8yNzQ4NjQ0Ml8xLmpwZw==.jpg" alt="">
+</div>
+
+<div class="images">
+    <img src="https://just-eat.by/image/data/shops/41599/77360.jpg" alt="">
+</div>
+
+<div class="images">
+    <img src="https://avatars.mds.yandex.net/get-altay/6236523/2a0000017f55c14c1e6478c32813403e8820/XXL_height" alt="">
+</div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <img src="https://53a7276f-d68f-462e-a2bf-df223e005be4.selstorage.ru/uploads/media/photo/2624946/orig.webp" alt="">
+    </div>
+    <div class="card">
+        <img src="https://53a7276f-d68f-462e-a2bf-df223e005be4.selstorage.ru/uploads/media/photo/2132343/29277ecdc28393dd2f65bbac9cdd3c2d.webp" alt="">
+    </div>
+    <div class="card">
+        <img src="https://53a7276f-d68f-462e-a2bf-df223e005be4.selstorage.ru/uploads/media/photo/2132350/20eb48224bdcd7667b9038c8076b5aef.webp" alt="">
+    </div>
+
+</div>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.thaqfny.com/wp-content/uploads/2022/01/maxresdefault-4-8.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ytimg.com/vi/lJPfEVCkwGU/maxresdefault.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.ytimg.com/vi/ePoHr7YZCC0/maxresdefault.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+
+<div class="modal" id="feedbackModal">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+        <form action="" method="post" enctype="multipart/form-data" class="feedback-form">
+            <h2>Свяжитесь с нами</h2>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="" required placeholder="Укажите имя" ></label>
+            <label for="phone">Оцените от 1 до 5:</label>
+            <input type="tel" id="phone" name="" required placeholder="Введите оценку" autocomplete="+996" ></label>
+            <label for="message">Опишите почему эта оценка</label>
+            <textarea name="" id="message" rows="4" required placeholder=""></textarea>
+            <button type="submit">Send</button>
+        </form>    
+    </div>
+</div>
+
+
+<!-- <div class="modal" id="feedbackModal"> 
+    <div class="modal-content"> 
+        <span id="close">&times;</span>
+        <form action="#" method="POST" enctype="multipart/form-data" class="feedback-form"> 
+            <h2>Обратная связь</h2> 
+            <label for="name">Имя:</label> 
+            <input type="text" id="name" name="name" required placeholder="Укажите имя"> 
+            <label for="message">Сообщение:</label> 
+            <textarea id="message" name="message" rows="4" required placeholder="Оставьте сообщение"></textarea> 
+            <button type="submit">Отправить</button> 
+        </form> 
+    </div> 
+</div> -->
+
+
+ <footer>
+    <p>Telephone: <a href="#">0550644770</a></p>
+    <p>Website: <a href="#">dodopizza.kg</a></p>
+    <p>Email: <a href="#">dodopizza@gmail.com</a></p>
+</footer>
+    
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
